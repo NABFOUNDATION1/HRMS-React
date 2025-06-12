@@ -1,0 +1,18 @@
+.active
+{
+    font-weight:bold;
+    background-color: aqua;
+}
+#sidebar
+{
+    background-color: #121c3e;
+}
+.info-box
+{
+    background-color: #dae4fe;
+
+}
+.info-box-content
+{
+    background-color: white;
+}
