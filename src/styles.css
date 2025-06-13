@@ -1,3 +1,7 @@
+body
+{
+    background-color: #dae4fe;
+}
 .active
 {
     font-weight:bold;
@@ -10,9 +14,17 @@
 .info-box
 {
     background-color: #dae4fe;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    max-width: 30rem;
+    max-height:50rem;
 
 }
 .info-box-content
 {
-    background-color: white;
+    background-color: #dae4fe;
+}
+.bg-default
+{
+    background-color: #dae4fe;
 }

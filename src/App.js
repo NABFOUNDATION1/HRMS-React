@@ -1,10 +1,13 @@
-import './App.css';
-import Sidebar from './components/sidebar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
+import ReminderNoteBox from './components/ReminderNoteBox';
+
+
 
 function App() {
   return (
     <>
-    <Sidebar/>
+    <ReminderNoteBox/>  
     </>
   );
 }
