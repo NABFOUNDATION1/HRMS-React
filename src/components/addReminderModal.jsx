@@ -15,7 +15,7 @@ const AddReminderModal = ({ show, onClose, onAdd }) => {
       onClose();
       setText("");
       setDate("");
-      setColor("light");
+      setColor("default");
     }
   };
 
@@ -39,8 +39,8 @@ const AddReminderModal = ({ show, onClose, onAdd }) => {
             <Form.Label>Date</Form.Label>
             <Form.Control
               type="date"
-              value={date}
-              onChange={(e) => setDate(new Date(e.target.valueAsDate))}
+              value={date ? date.toISOString().split("T")[0] : ""}
+              onChange={(e) => setDate((new Date(e.target.value)))}
             />
           </Form.Group>
           <Form.Group className="mb-3 mt-3" controlId="reminderColor">

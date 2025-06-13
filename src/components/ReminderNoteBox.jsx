@@ -30,7 +30,7 @@ const ReminderNoteBox =  () =>
         setReminders(updatedReminders);
     }
     const [showModal, setshowModal] = useState(false);
-
+//frontend addition and deletion working , have to add and delete the same from database using backend -- this to be added
     const handleAddReminder = (newReminder) =>
     {
         setReminders([...reminders,newReminder]);
