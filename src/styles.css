@@ -1,6 +1,6 @@
 body
 {
-    background-color: #dae4fe;
+    background-color: #e3edf9;
 }
 .active
 {
@@ -13,7 +13,7 @@ body
 }
 .info-box
 {
-    background-color: #dae4fe;
+    background-color:#dae4fe ;
     overflow-x: scroll;
     overflow-y: scroll;
     max-width: 30rem;
@@ -22,9 +22,19 @@ body
 }
 .info-box-content
 {
-    background-color: #dae4fe;
+    background-color: white;
 }
 .bg-default
 {
-    background-color: #dae4fe;
+    background-color: #e3edf9;
+}
+.icons
+{
+    cursor:pointer;
+}
+/*for employee box*/
+.profile-photo
+{
+    width: 2.3rem;
+    height: 2.3rem;
 }
