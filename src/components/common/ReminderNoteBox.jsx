@@ -1,15 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
-import AddReminderModal from "./addReminderModal";
-import "../styles.css";
-import TestModal from "./test";
-
-
+import AddReminderModal from "../common/addReminderModal";
+import "../../styles/reminderbox.css";
 const ReminderNoteBox =  () =>
-{
-    
-    console.log("ReminderNoteBox rendering");
+{  
     const fetchedReminders = [{text : "Gujarat Visit" , date:  new Date("2025-05-23") , color: "default"},
         {text:"Website Update" ,date:new Date("2025-05-23") ,  color:"warning"},
         {text:"Board Meeting", date:new Date("2025-05-23") , color:"danger"} //colour options will be yellow , red no color but they will be stored in bs format to drectly give ot the colour 
@@ -31,14 +26,14 @@ const ReminderNoteBox =  () =>
 
     }
     return(
-        <div className="container w-50 bg-white rounded-2" title="Reminder/Note">
+        <div className="info-box rounded rounded-2 m-4 p-2 border border-black" title="Reminder/Note">
+            <div className="info-box-content p-3 bg-white">
             <h6 className="fw-semibold border-bottom pb-2">Notes / Reminder </h6>
-            <div className="container-content w-100">
             <ul className="list-unstyled">
                 {reminders.map((note,index)=>(
                     <li key={index} className={`rounded mb-2 mt-2 d-flex justify-content-between align-items-center bg-${note.color}  ${note.color === 'warning' || note.color== 'default' ? "text-dark" : "text-light"}`}>
                         <span>{note.text}</span> 
-                        <span> {note.date.toLocaleDateString()} </span> 
+                        <span> {new Date(note.date).toLocaleDateString()} </span> 
                         <span className="icons"> <FaCheck onClick={()=> handleDelete(index)}  style={{cursor:"pointer"}} title="Mark as Done"></FaCheck> </span>
                     </li>
                 ))}

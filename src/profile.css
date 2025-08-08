@@ -1,0 +1,41 @@
+.profile-container
+{
+    display: flex;
+    flex-direction: column;
+}
+.card-section
+{
+    width: 100%;
+}
+.main-grid
+{
+    display: grid;
+    justify-items: center;
+    align-items: center; 
+  grid-template-columns: 1fr;
+  justify-content: center;
+  grid-template-rows: auto;
+  
+}
+
+.profile-box
+{
+    grid-column: 1;
+    grid-row:1;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+@media (max-width: 767.9px) {
+    .main-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .employee-box,
+    .reminder-box,
+    .paySlip-box,
+    .latecomer-box {
+      grid-column: 1;
+      grid-row: auto;
+    }
+  }

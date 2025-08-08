@@ -38,9 +38,9 @@ const AddReminderModal = ({ show, onClose, onAdd }) => {
           <Form.Group className="mb-3 mt-3" controlId="reminderDate">
             <Form.Label>Date</Form.Label>
             <Form.Control
-              type="date"
-              value={date ? date.toISOString().split("T")[0] : ""}
-              onChange={(e) => setDate((new Date(e.target.value)))}
+             type="date"
+             value={date || ""}
+             onChange={(e) => setDate(e.target.value)}
             />
           </Form.Group>
           <Form.Group className="mb-3 mt-3" controlId="reminderColor">

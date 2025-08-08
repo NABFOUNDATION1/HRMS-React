@@ -1,0 +1,40 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.main-container
+{
+    display: flex;
+    flex-direction: column;
+}
+.main-grid
+{
+    display: grid;
+    justify-items: center;
+    align-items: center; 
+  grid-template-columns: 1fr;
+  justify-content: center;
+  grid-template-rows: auto;
+  
+}
+
+.leave-box
+{
+    margin-top: 0px;
+    grid-column: 1;
+    grid-row:1;
+    width: 100%;
+    
+}
+
+@media (max-width: 767.9px) {
+    .main-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    
+    .leave-box {
+      grid-column: 1;
+      grid-row: auto;
+    }
+  }

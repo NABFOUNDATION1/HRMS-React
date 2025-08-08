@@ -1,0 +1,43 @@
+.box
+{
+    background-color:#dae4fe;
+   
+    width:auto;
+    height: 32rem;
+
+}
+.box ul , .box li
+{
+    border:none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.box-content
+{
+    margin-top: 1rem;
+    background-color: white;
+    width: auto;
+    height: 25rem;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+.bg-default
+{
+    background-color: #e3edf9;
+}
+.icons
+{
+    cursor:pointer;
+}
+/*for employee box*/
+.profile-photo
+{
+    width: 2.3rem;
+    height: 2.3rem;
+}
+.icon-button
+{
+    background-color: transparent;
+    border:none;
+}

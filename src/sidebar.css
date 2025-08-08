@@ -1,0 +1,40 @@
+/* Default sidebar for desktop */
+.sidebar {
+    width: 17rem;
+    height: 100vh;
+    background-color: #121c3e;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1050;
+    position: static;
+  }
+  
+  /* Mobile behavior */
+  @media (max-width: 767.98px) {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+    }
+  
+    .sidebar.show {
+      transform: translateX(0);
+    }
+  
+    .sidebar-overlay {
+      
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1040;
+    }
+  
+    body.sidebar-open {
+      overflow: hidden;
+    }
+  }
+  

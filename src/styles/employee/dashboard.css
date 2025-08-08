@@ -1,0 +1,40 @@
+.dashboard-container
+{
+    display: flex;
+    flex-direction: column;
+}
+.card-section
+{
+    width: 100%;
+}
+.main-grid
+{
+    display: grid;
+    justify-items: center;
+    align-items: center; 
+  grid-template-columns: 1fr;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-rows: 1fr;
+  
+}
+
+.reminder-box
+{
+    grid-column:1/-1;
+    grid-row:1/-1;
+    
+}
+
+@media (max-width: 767.9px) {
+    .main-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .reminder-box
+    {
+      grid-column: 1/-1;
+      grid-row: 1/-1;
+    }
+  }
+  

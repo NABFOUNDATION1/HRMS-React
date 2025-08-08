@@ -1,6 +1,6 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import '../sidebar.css';
+import '../../sidebar.css';
 const Sidebar =  ({isOpen}) =>
 {
     return (
@@ -21,12 +21,11 @@ const Sidebar =  ({isOpen}) =>
                 <div className="sidebar-features d-flex flex-column justify-content-around flex-grow-1">
                     <SideBarItem icon="bi-house-door-fill" text="Home" link="dashboard"/>
                     <SideBarItem icon="bi-person-square" text="Profile" link="profile" />
-                    <SideBarItem icon="bi-person" text="Manage Employees" link="manageEmployees" />
-                    <SideBarItem icon="bi-calendar-check" text="Manage Attendance" link="manageAttendance"/>
-                    <SideBarItem icon="bi-person-badge" text="Manage Interns" link="manageInterns"/>
-                    <SideBarItem icon="bi-bag-fill" text="Leave Requests" link="manageLeaves"/>
-                    <SideBarItem icon="bi-briefcase-fill" text="Tour Requests" link="manageTours"/>
+                    <SideBarItem icon="bi-calendar-check" text="Attendance" link="employeeAttendance"/>
+                    <SideBarItem icon="bi-bag-fill" text="My Leaves" link="employeeLeaves"/>
+                    <SideBarItem icon="bi-briefcase-fill" text="My Tours" link="employeeTours"/>
                     <SideBarItem icon="bi-book" text="Policies" link="policies"/>
+                    <SideBarItem icon="bi bi-fullscreen" text="Training Session" link="trainingSession"/>
                     <div className="feature d-flex flex-row align-items-center ">
                         <div className="feature-icon me-3">
                             <i className="bi bi-power fs-3"> </i>

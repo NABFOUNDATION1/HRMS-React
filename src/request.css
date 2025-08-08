@@ -1,0 +1,89 @@
+.approval-btn
+{
+    background-color: transparent;
+}
+.outer-box
+{
+    background-color: #dae4fe;
+    width: 75rem;
+    display: flex;
+    justify-content: center;
+}
+table {
+    border-collapse: collapse;
+}
+.request-table
+{
+    
+    background-color: white;
+    min-height: 15rem;
+    min-width: 69rem;
+   
+}
+.request-table th{
+    border-bottom: 2px solid black;
+}
+.request-table   tr
+{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.request-table td{
+    padding-left:2rem;
+    padding-right:2rem;
+}
+.status-table
+{
+    background-color: white;
+    min-height:15rem;
+    min-width: 69rem;
+}
+.status-table th{
+    border-bottom: 2px solid black;
+}
+
+.status-table tr
+{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.status-table td{
+    padding-left:2rem;
+    padding-right:2rem;
+}
+.request-table td, 
+.status-table td {
+    vertical-align: top;
+}
+.approved-row
+{
+    color:green;
+}
+.disapproved-row
+{
+    color:red;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .pagination button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  .pagination button.active {
+    background-color: #008CBA; /* Change to your preferred color */
+    color: white;
+  }
